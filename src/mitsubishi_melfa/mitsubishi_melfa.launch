@@ -1,0 +1,9 @@
+<launch>  
+       <!-- Mitsubishi_melfa Node-->  
+       <node pkg="mitsubishi_melfa" type="mitsubishi_melfa_communication" name="communication" output="screen"/>  
+       <node pkg="mitsubishi_melfa" type="mitsubishi_status_monitor" name="status" output="screen" launch-prefix="xterm -e" />         
+       <node pkg="mitsubishi_melfa" type="mitsubishi_trajectory_generator" name="trajectory" output="screen"/>  
+</launch>
+
+
+
