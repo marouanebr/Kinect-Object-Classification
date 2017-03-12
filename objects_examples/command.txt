@@ -1,0 +1,19 @@
+rostopic pub -1 /mitsubishi_targets mitsubishi_melfa/PositionCommand -- "x: 30.0
+y: 5.0
+z: -50.0
+velocity_factor: 0.3"
+
+rostopic pub -1 /mitsubishi_targets mitsubishi_melfa/PositionCommand -- "x: 0.0
+y: 5.0
+z: -50.0
+velocity_factor: 0.5"
+
+rostopic pub -1 /mitsubishi_targets mitsubishi_melfa/PositionCommand -- "x: -30.0
+y: -5.0
+z: -50
+velocity_factor: 0.5"
+
+rostopic pub -1 /mitsubishi_targets mitsubishi_melfa/PositionCommand -- "x: 0.0
+y: 0.0
+z: 0.0
+velocity_factor: 0.5"
