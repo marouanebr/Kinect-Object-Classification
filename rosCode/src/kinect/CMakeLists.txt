@@ -45,14 +45,14 @@ include_directories(include
 #	"src/*.cpp"
 #)
 
+add_executable(create_input_cloud src/create_input_cloud.cpp)
+target_link_libraries(create_input_cloud ${catkin_LIBRARIES} ${PCL_LIBRARIES} libvtkCommon.so libvtkFiltering.so)
+
 add_executable(objects_trajectory src/objects_trajectory.cpp)
 target_link_libraries(objects_trajectory ${catkin_LIBRARIES})
 
 add_executable(objects_detection src/objects_detection.cpp)
 target_link_libraries(objects_detection ${catkin_LIBRARIES} ${PCL_LIBRARIES} libvtkCommon.so libvtkFiltering.so)
 
-add_executable(create_input_cloud src/create_input_cloud.cpp)
-target_link_libraries(create_input_cloud ${catkin_LIBRARIES} ${PCL_LIBRARIES} libvtkCommon.so libvtkFiltering.so)
 
-# add_executable (calibration src/calibration.cpp)
-# target_link_libraries (calibration ${catkin_LIBRARIES} ${PCL_LIBRARIES} libvtkCommon.so libvtkFiltering.so)
+
